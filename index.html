@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Apex Auto Care - Home</title>
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Auto Care | Home</title>
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!-- Unit 5 Requirement 2g: Internal CSS on Home Page -->
+  <style>
+    body {
+      background-color: #eef2f7; /* Change 1: Custom page background tint */
+    }
+    .hero-section p {
+      font-size: 1.1rem; /* Change 2: Custom lead text sizing */
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Apex Auto Care</h1>
-    </header>
 
+  <header>
+    <img src="images/logo.png" alt="Apex Auto Care official logo">
+    <h1>Apex Auto Care</h1>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <ul>
+        <li><a href="#" id="current-page">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>Quality Automotive Care You Can Trust</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-        </section>
+  <main>
+    <section class="hero-section">
+      <h2 class="accent-heading">Reliable Auto Repair &amp; Maintenance</h2>
+      <img src="images/hero.jpg" alt="Clean interior view of Apex Auto Care service bay with vehicle on lift">
+      <p>Welcome to Apex Auto Care, your trusted partner for complete automotive repair and routine vehicle maintenance. Our ASE-certified technicians deliver quality workmanship with transparent pricing.</p>
+    </section>
+  </main>
 
-        <section>
-            <h2>Our Core Highlights</h2>
-            <ul>
-                <li>Certified ASE Mechanics</li>
-                <li>Comprehensive Vehicle Diagnostics</li>
-                <li>Affordable and Transparent Pricing</li>
-            </ul>
-        </section>
-    </main>
+  <footer>
+    <p>&copy; 2026 Apex Auto Care. All rights reserved.</p>
+    <p>
+      <a href="#">Home</a> | 
+      <a href="about.html">About Us</a> | 
+      <a href="services.html">Services</a> | 
+      <a href="faqs.html">FAQs</a> | 
+      <a href="contact.html">Contact Us</a>
+    </p>
+  </footer>
 
-    <footer>
-        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="services.html">Services</a> | <a href="faqs.html">FAQs</a> | <a href="contact.html">Contact Us</a></p>
-        <p>&copy; 2026 Apex Auto Care</p>
-    </footer>
 </body>
 </html>
