@@ -26,8 +26,89 @@
     <section class="contact-location">
       <h2 class="accent-heading">Visit Our Service Garage</h2>
       <img src="images/location.jpg" alt="Heavy duty engine hoist hook inside auto repair garage">
-      <p>Stop by our garage or contact our support team today to schedule an inspection or receive a free estimate.</p>
+      <p>Stop by our garage or complete the form below to schedule an inspection or request a quote.</p>
     </section>
+
+    <!-- Subheading before the form (Part 3.2.d) -->
+    <h2>Schedule an Appointment</h2>
+
+    <!-- Form Element with Action and Post Method (Part 3.2.b & c) -->
+    <form action="#" method="post">
+
+      <!-- Fieldset 1: Customer Details (Part 3.2.f.viii) -->
+      <fieldset>
+        <legend>Customer Information</legend>
+
+        <!-- Text-Based Inputs (Part 3.2.f.ii) -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <!-- Non-Text Based Input (Part 3.2.f.iii) -->
+        <label for="appdate">Preferred Service Date:</label>
+        <input type="date" id="appdate" name="servicedate">
+      </fieldset>
+
+      <!-- Fieldset 2: Vehicle & Service Details (Part 3.2.f.viii) -->
+      <fieldset>
+        <legend>Service Preferences</legend>
+
+        <!-- Drop-Down Select Menu (Part 3.2.f.v) -->
+        <label for="vehicletype">Vehicle Category:</label>
+        <select id="vehicletype" name="vehicletype">
+          <option value="">-- Select One --</option>
+          <option value="sedan">Sedan / Coupe</option>
+          <option value="suv">SUV / Crossover</option>
+          <option value="truck">Truck / Van</option>
+          <option value="hybrid">Hybrid / EV</option>
+        </select>
+
+        <!-- Radio Button Group (Part 3.2.f.iv) -->
+        <p class="form-question-label">Preferred Contact Method:</p>
+        <div class="inline-option-group">
+          <input type="radio" id="contact-email" name="contactmethod" value="email" checked>
+          <label for="contact-email">Email</label>
+
+          <input type="radio" id="contact-phone" name="contactmethod" value="phone">
+          <label for="contact-phone">Phone Call</label>
+
+          <input type="radio" id="contact-text" name="contactmethod" value="text">
+          <label for="contact-text">Text Message</label>
+        </div>
+
+        <!-- Checkbox Group (Part 3.2.f.vi) -->
+        <p class="form-question-label">Services Needed (Check all that apply):</p>
+        <div class="inline-option-group">
+          <input type="checkbox" id="svc-oil" name="services" value="oilchange">
+          <label for="svc-oil">Oil &amp; Filter Change</label>
+
+          <input type="checkbox" id="svc-brake" name="services" value="brakes">
+          <label for="svc-brake">Brake Inspection</label>
+
+          <input type="checkbox" id="svc-diag" name="services" value="diagnostics">
+          <label for="svc-diag">Engine Diagnostics</label>
+        </div>
+
+        <!-- Textarea Field (Part 3.2.f.vii) -->
+        <label for="comments">Additional Details / Questions:</label>
+        <textarea id="comments" name="comments" placeholder="Describe any issues your vehicle is experiencing..."></textarea>
+      </fieldset>
+
+      <!-- Submit and Reset Buttons (Part 3.2.f.ix & x) -->
+      <div class="form-buttons">
+        <input type="submit" value="Submit Request">
+        <input type="reset" value="Clear Form">
+      </div>
+
+    </form>
   </main>
 
   <footer>
