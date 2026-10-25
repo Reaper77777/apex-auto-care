@@ -31,15 +31,14 @@ header h1 {
   font-size: 2rem;
 }
 
-/* Navigation Container */
+/* Navigation Menu */
 nav {
   width: 100%;
   clear: both;
 }
 
-/* Unit 5 Requirement 2a: Navigation List & Nested Link Selectors */
 nav ul {
-  list-style-type: none; /* 1. Remove bullets */
+  list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -50,27 +49,25 @@ nav ul li {
   margin: 0 5px;
 }
 
-/* 2a.ii: Link Formatting & Sizing */
 nav ul li a {
-  display: block; /* 4. Coded to occupy available space */
-  width: 120px; /* 3. Applied width to links */
-  padding: 10px 15px; /* Borders & Padding */
-  text-decoration: none; /* 2. Remove underline */
-  background-color: #2a2a2a; /* 5. Link background color */
-  color: #ffffff; /* 6. Text color */
+  display: block;
+  width: 120px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #2a2a2a;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 4px;
   text-align: center;
 }
 
-/* 2a.ii.7 & 2f: Hover State and #current-page ID Selector */
 nav ul li a:hover,
 #current-page {
-  background-color: #3b82f6; /* Visual change on hover / active page */
+  background-color: #3b82f6;
   color: #ffffff;
 }
 
-/* Main Content Container */
+/* Main Body Layout */
 main {
   width: 80%;
   max-width: 900px;
@@ -81,7 +78,6 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Main Stock Photos */
 main img {
   max-width: 100%;
   height: auto;
@@ -92,11 +88,140 @@ main img {
   margin: 15px 0;
 }
 
-/* Unit 5 Requirement 2d: Reusable Class for Styling Elements */
 .accent-heading {
   color: #1e40af;
   border-bottom: 2px solid #3b82f6;
   padding-bottom: 5px;
+}
+
+/* =========================================================
+   UNIT 6: WEB FORM STYLING RULES (PART 4)
+   ========================================================= */
+
+/* 4.3.a, b, g: Form Container Border, Background, Width, and Padding */
+form {
+  width: 95%;
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8fafc;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+/* 4.3.c: Fieldset Border, Background Color, and Padding */
+fieldset {
+  border: 1px solid #94a3b8;
+  background-color: #ffffff;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  color: #1e40af;
+  padding: 0 8px;
+  font-size: 1.1rem;
+}
+
+/* 4.3.d: Text Label Size and Color */
+label, 
+.form-question-label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+/* 4.3.e: Display Property and Sizing for Input Elements */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* 4.3.f: Width and Height Sizing on Form Textarea Element */
+form textarea {
+  width: 100%;
+  height: 120px;
+  resize: vertical;
+}
+
+/* 4.3.e.i: Radio & Checkbox Inline Display Formatting */
+.inline-option-group {
+  margin-bottom: 12px;
+}
+
+.inline-option-group input[type="radio"],
+.inline-option-group input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 4px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.inline-option-group input[type="radio"]:first-child,
+.inline-option-group input[type="checkbox"]:first-child {
+  margin-left: 0;
+}
+
+.inline-option-group label {
+  display: inline-block;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* Form Action Buttons */
+.form-buttons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 10px;
+}
+
+form input[type="submit"] {
+  background-color: #2563eb;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+form input[type="reset"] {
+  background-color: #64748b;
+}
+
+form input[type="reset"]:hover {
+  background-color: #475569;
 }
 
 /* Footer Styling */
