@@ -1,248 +1,263 @@
-/* Base Page Reset & Styles */
+/* Apex Auto Care - Fluid & W3C Validated Stylesheet (Unit 9) */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #f1f5f9;
 }
 
-/* Header Container */
+/* Header & Navigation */
 header {
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px 0;
-  background-color: #1a1a1a;
+  width: 85%;
+  max-width: 56.25em;
+  margin: 1.25em auto 0 auto;
+  padding: 1.5em;
+  background-color: #1e40af;
   color: #ffffff;
   text-align: center;
+  border-radius: 0.375em 0.375em 0 0;
 }
 
-/* Header Logo */
 header img {
-  max-width: 150px;
+  max-width: 100%;
+  width: 7.5em;
   height: auto;
-  border: 2px solid #3b82f6;
-  border-radius: 4px;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 0.75em auto;
+  border-radius: 0.25em;
 }
 
 header h1 {
-  margin: 5px 0 15px 0;
-  font-size: 2rem;
-}
-
-/* Navigation Menu */
-nav {
-  width: 100%;
-  clear: both;
+  margin: 0 0 0.75em 0;
+  font-size: 1.85em;
+  color: #ffffff;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 5px;
+  display: inline-block;
+  margin: 0.25em;
 }
 
 nav ul li a {
-  display: block;
-  width: 120px;
-  padding: 10px 15px;
-  text-decoration: none;
-  background-color: #2a2a2a;
+  display: inline-block;
+  padding: 0.6em 1.1em;
+  background-color: #2563eb;
   color: #ffffff;
+  text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
-  text-align: center;
+  font-size: 1em;
+  border-radius: 0.25em;
 }
 
 nav ul li a:hover,
-#current-page {
-  background-color: #3b82f6;
-  color: #ffffff;
+nav ul li a:focus,
+nav ul li a#current-page {
+  background-color: #facc15;
+  color: #1e293b;
 }
 
-/* Main Body Layout */
+/* Main Content Container */
 main {
-  width: 80%;
-  max-width: 900px;
-  margin: 25px auto;
-  padding: 25px;
+  width: 85%;
+  max-width: 56.25em;
+  margin: 0 auto;
+  padding: 2em;
   background-color: #ffffff;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #cccccc;
-  padding: 5px;
-  border-radius: 6px;
   display: block;
-  margin: 15px 0;
+  margin: 1.25em auto;
+  border-radius: 0.375em;
 }
 
 .accent-heading {
   color: #1e40af;
-  border-bottom: 2px solid #3b82f6;
-  padding-bottom: 5px;
+  font-size: 1.5em;
+  margin-top: 0;
+  border-bottom: 0.125em solid #cbd5e1;
+  padding-bottom: 0.4em;
 }
 
-/* =========================================================
-   UNIT 6: WEB FORM STYLING RULES (PART 4)
-   ========================================================= */
+h3 {
+  color: #1d4ed8;
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
 
-/* 4.3.a, b, g: Form Container Border, Background, Width, and Padding */
+p {
+  margin-bottom: 1em;
+}
+
+main ul {
+  margin-bottom: 1.25em;
+  padding-left: 1.5em;
+}
+
+main ul li {
+  margin-bottom: 0.5em;
+}
+
+/* Contact Form Styling */
+.form-instruction {
+  font-style: italic;
+  font-size: 0.95em;
+  color: #475569;
+}
+
+.required-asterisk {
+  color: #b91c1c;
+  font-weight: bold;
+}
+
 form {
-  width: 95%;
-  max-width: 750px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #f8fafc;
-  border: 2px solid #cbd5e1;
-  border-radius: 8px;
+  width: 100%;
+  margin-top: 1em;
 }
 
-/* 4.3.c: Fieldset Border, Background Color, and Padding */
 fieldset {
-  border: 1px solid #94a3b8;
-  background-color: #ffffff;
-  padding: 18px;
-  margin-bottom: 20px;
-  border-radius: 6px;
+  border: 0.0625em solid #94a3b8;
+  border-radius: 0.375em;
+  padding: 1.25em;
+  margin-bottom: 1.5em;
+  background-color: #f8fafc;
 }
 
 legend {
   font-weight: bold;
   color: #1e40af;
-  padding: 0 8px;
-  font-size: 1.1rem;
+  padding: 0 0.5em;
+  font-size: 1.1em;
 }
 
-/* 4.3.d: Text Label Size and Color */
-label, 
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.85em;
+  margin-bottom: 0.3em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6em;
+  border: 0.0625em solid #94a3b8;
+  border-radius: 0.25em;
+  font-family: inherit;
+  font-size: 1em;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+textarea {
+  height: 7.5em;
+}
+
+.inline-option-group {
+  margin-top: 1em;
+}
+
 .form-question-label {
   display: block;
-  margin-top: 12px;
-  margin-bottom: 4px;
   font-weight: bold;
-  color: #1e293b;
-  font-size: 0.95rem;
-}
-
-/* 4.3.e: Display Property and Sizing for Input Elements */
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form input[type="date"],
-form select,
-form textarea {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  padding: 8px 10px;
-  border: 1px solid #cbd5e1;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: inherit;
-  font-size: 0.95rem;
-  margin-bottom: 10px;
-}
-
-/* 4.3.f: Width and Height Sizing on Form Textarea Element */
-form textarea {
-  width: 100%;
-  height: 120px;
-  resize: vertical;
-}
-
-/* 4.3.e.i: Radio & Checkbox Inline Display Formatting */
-.inline-option-group {
-  margin-bottom: 12px;
+  margin-bottom: 0.4em;
 }
 
 .inline-option-group input[type="radio"],
 .inline-option-group input[type="checkbox"] {
   display: inline-block;
-  margin-right: 4px;
-  margin-left: 10px;
-  vertical-align: middle;
-}
-
-.inline-option-group input[type="radio"]:first-child,
-.inline-option-group input[type="checkbox"]:first-child {
-  margin-left: 0;
+  width: auto;
+  margin-right: 0.35em;
 }
 
 .inline-option-group label {
   display: inline-block;
   font-weight: normal;
   margin-top: 0;
-  margin-bottom: 0;
-  vertical-align: middle;
+  margin-right: 1.25em;
 }
 
-/* Form Action Buttons */
 .form-buttons {
-  margin-top: 15px;
-  text-align: center;
+  margin-top: 1em;
 }
 
-form input[type="submit"],
-form input[type="reset"] {
+input[type="submit"],
+input[type="reset"] {
   display: inline-block;
-  width: 150px;
-  height: 40px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #ffffff;
+  width: 10em;
+  padding: 0.7em 1em;
+  margin-right: 0.75em;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25em;
+  font-size: 1em;
+  font-weight: bold;
   cursor: pointer;
-  margin: 5px 10px;
 }
 
-form input[type="submit"] {
-  background-color: #2563eb;
+input[type="submit"] {
+  background-color: #1e40af;
+  color: #ffffff;
 }
 
-form input[type="submit"]:hover {
+input[type="submit"]:hover {
   background-color: #1d4ed8;
 }
 
-form input[type="reset"] {
-  background-color: #64748b;
+input[type="reset"] {
+  background-color: #cbd5e1;
+  color: #1e293b;
 }
 
-form input[type="reset"]:hover {
-  background-color: #475569;
+input[type="reset"]:hover {
+  background-color: #94a3b8;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-  width: 100%;
-  text-align: center;
-  padding: 20px 0;
-  background-color: #1a1a1a;
+  width: 85%;
+  max-width: 56.25em;
+  margin: 0 auto 1.5em auto;
+  padding: 1.25em;
+  background-color: #1e293b;
   color: #ffffff;
-  margin-top: 40px;
+  text-align: center;
+  border-radius: 0 0 0.375em 0.375em;
+  font-size: 0.95em;
 }
 
 footer p {
-  margin: 5px 0;
+  margin: 0.35em 0;
 }
 
 footer a {
-  color: #ffffff;
-  text-decoration: none;
+  color: #facc15;
+  text-decoration: underline;
 }
 
 footer a:hover {
-  color: #3b82f6;
+  color: #ffffff;
 }
